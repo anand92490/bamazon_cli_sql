@@ -1,0 +1,24 @@
+{
+  "name": "bamazon_cli_sql",
+  "version": "1.0.0",
+  "description": "The app takes in orders from customers and deplete stock from the store's inventory.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anand92490/bamazon_cli_sql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anand92490/bamazon_cli_sql/issues"
+  },
+  "homepage": "https://github.com/anand92490/bamazon_cli_sql#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
+}
