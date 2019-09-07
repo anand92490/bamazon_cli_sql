@@ -42,3 +42,21 @@ VALUES("Lays", "Foods", 2.50, 117);
 INSERT INTO products(product_name, department_name, price, stock_quantity) 
 VALUES("HP 360 Ink", "Stationary", 30.00, 50);
 
+CREATE TABLE departments (
+	department_id INTEGER(10) AUTO_INCREMENT NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    over_head_costs DECIMAL(10, 2),
+    total_sales DECIMAL(10, 2),
+    PRIMARY KEY(department_id)
+);
+
+
+INSERT INTO departments
+	(department_name, over_head_costs, total_sales)
+VALUES
+	("Meats and Poultry", 3500.00, 0.00),
+    ("International Selection", 350.00, 0.00),
+    ("Diaries", 350.00, 0.00),
+    ("Fruits and Vegetables", 1000.00, 0.00),
+    ("Soda", 350.00, 0.00),
+    ("Greeting Cards", 350.00, 0.00);

@@ -14,7 +14,6 @@ function displayInventory() {
         // loop through the list of items and display the data
         let data_length = data.length;
         for (let i = 0; i < data_length; i++) {
-            console.log('ID- ' + data[i].item_id + '  || PRODUCT- ' + data[i].product_name + '   || DEPT - ' + data[i].department_name + '   || PRICE - ' + data[i].price + '    || QTY - ' + data[i].stock_quantity + '\n');
         }
 
         // call the selectProduct function here after the the table of contents are displayed
