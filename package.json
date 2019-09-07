@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anand92490/bamazon_cli_sql#readme",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "inquirer": "^7.0.0",
     "mysql": "^2.17.1"
   }
