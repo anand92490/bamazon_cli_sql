@@ -18,6 +18,10 @@ Bamazon is a Node.js Command-Line-Interface application that takes in orders fro
 The application has three different functional modules:
 
  1. **Customer's View** - This modules displays the list of the products available for purchase. It then prompts the user to make a selection  by product ID followed by the quantity. Once the customer has placed the order, the application checks the store if it has sufficient quantity to fulfill the customer's order and display's the total purchase cost, should the order criteria be fulfilled.
+
+ Type `node bamazonCustomer.js` on the command line to initiaize Customer's view and select the product and number of units of the product to make a purchase.
+
+ ![node bamazonCustomer,js](images/bamazonCustomer.png)
  
  
  
@@ -29,9 +33,9 @@ The application has three different functional modules:
  
  
 
-Type `node bamazonCustomer.js` on the command line to initialize Manager's view and select the desired options using the arrow keys.
+Type `node bamazonManager.js` on the command line to initialize Manager's view and select the desired options using the arrow keys.
 
- ![node bamazonCustomer.js](images/bamazonManager1.png)
+ ![node bamazonManager.js](images/bamazonManager1.png)
 
 Example of `add the new product`.
 
