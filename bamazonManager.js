@@ -49,7 +49,7 @@ function viewProducts() {
 
         if (err) throw err;
 
-        console.log('"\n                      Items availavle for sale.\n             " + "\n           ------------------------------------------\n"');
+        console.log('"\n                      Items availavle for sale.\n               \n           ------------------------------------------\n"');
 
         let data_length = data.length;
         for (let i = 0; i < data_length; i++) {

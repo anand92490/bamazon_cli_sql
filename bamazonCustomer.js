@@ -9,7 +9,7 @@ function displayInventory() {
     connect.connection.query('SELECT * FROM products', function (err, data) {
         if (err) throw err;
 
-        console.log("\n                      welcome to bamazon.\n             " + "\n           ------------------------------------------\n");
+        console.log("\n                      welcome to bamazon.\n            \n           ------------------------------------------\n");
 
         // loop through the list of items and display the data
         let data_length = data.length;

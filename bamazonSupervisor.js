@@ -10,7 +10,7 @@ function listActions() {
     prompt({
         name: 'action',
         type: 'list',
-        message: 'What would you like to do?',
+        message: 'What would you like to do?\n',
         choices: ['View Product Sales by Department', 'Create New Department']
 
     }).then(function (answer) {
@@ -70,7 +70,7 @@ function viewSalesByDepartment() {
                 table_data.push(data[i][key]);
             }
 
-            //Set a variable to store the profit from the tables data of totalsales - overhead cost
+            //Set a letiable to store the profit from the tables data of totalsales - overhead cost
             let total_profit = data[i].total_sales - data[i].over_head_costs;
 
             // push that profit amount into the table data array to populate that last column.
@@ -97,9 +97,83 @@ function viewSalesByDepartment() {
 function createNewDepartment() {
     //prompt the user what department would they like to add
 
+    prompt([
+
+        {
+            name: 'name',
+            type: 'input',
+            message: 'What is the name of the new department?',
+            validate: function (value) {
+
+                if (value !== '') {
+                    return true;
+
+                } else {
+                    console.log('\n\nPlease enter a valid input.\n');
+                    return false;
+                }
+            }
+        },
+
+        {
+            name: 'overhead_costs',
+            type: 'input',
+            message: 'What are the overhead costs associated with this department?',
+            validate: function (value) {
+
+                if (isNaN(value) == false) {
+                    return true;
+
+                } else {
+
+                    console.log('\n\nPlease enter a valid input.\n');
+                    return false;
+
+                }
+            }
+        },
+
+        {
+            name: 'total_sales',
+            type: 'input',
+            message: 'What are the total sales for the department?',
+            validate: function (value) {
+
+                if (isNaN(value) == false) {
+                    return true;
+                } else {
+
+                    console.log('\n\nPlease enter a valid input.\n');
+                    return false;
+
+                }
+            }
+            // pass the name, overhead costs and total sales
+        }
+
+    ]).then(function (answer) {
+
+        let overhead_costs_int = parseFloat(answer.overhead_costs);
+        let total_sales_int = parseFloat(answer.total_sales);
+
+        let query = 'INSERT INTO departments SET ?';
+
+        let values = {
+            department_name: answer.name,
+            over_head_costs: overhead_costs_int,
+            total_sales: total_sales_int
+        }
+
+        connect.connection.query(query, values, function (err, data) {
+
+            if (err) throw err;
+
+            console.log('\nDepartment has been created\n');
+
+            listActions();
+
+        });
+    });
 }
-
-
-
 
 listActions();
