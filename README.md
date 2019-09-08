@@ -25,13 +25,26 @@ The application has three different functional modules:
  c) Add to inventory
  d) Add new product
 
+Type `node bamazonCustomer.js` on the command line to initialize Manager's view and select the desired options using the arrow keys.
+
  ![node bamazonCustomer.js](images/bamazonManager1.png)
+
+Example of adding the new product.
+
  ![add a new product](images/bamazonManager2.png)
 
 3. **Supervisor's View**- This module allows the user to create a new Department and view the product sales by department and see the product sales, overhead costs and total profit.
 
+Type `node bamazonSupervisor.js` on the command line to initialize Supervisor's view and select the desired options.
+
 ![node bamazonSupervisor.js](images/bamazonSupervisor1.png)
+
+Example of view Product Sales by Department
+
 ![View product sales by department](images/bamazonSupervisor2.png)
+
+Example of Create new department.
+
 ![Create new department](images/bamazonSupervisor3.png)
 
 
