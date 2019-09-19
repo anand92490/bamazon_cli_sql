@@ -9,8 +9,8 @@ Bamazon is a Node.js Command-Line-Interface application that takes in orders fro
 **Node** is required to run this application. [download node.js](https://nodejs.org/en/download/) 
 
 1. Clone the repository.
-2. Install inquirer NPM by typing [npm install inquirer](https://www.npmjs.com/package/inquirer) on your terminal/bash
-3. Install MySQL NPM by typing [npm install mysql](https://www.npmjs.com/package/mysql) on your terminal/bash
+2. Install inquirer NPM by typing [npm install inquirer](https://www.npmjs.com/package/inquirer) on your command line.
+3. Install MySQL NPM by typing [npm install mysql](https://www.npmjs.com/package/mysql) on your command line.
 
 
 # How the app works? How to use the app?
